@@ -1,0 +1,17 @@
+D:\C#\IOT\Cf_manager\Cf_manager\bin\Debug\Cf_manager.exe.config
+D:\C#\IOT\Cf_manager\Cf_manager\bin\Debug\Cf_manager.exe
+D:\C#\IOT\Cf_manager\Cf_manager\bin\Debug\Cf_manager.pdb
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.csproj.AssemblyReference.cache
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.csproj.SuggestedBindingRedirects.cache
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.Properties.Resources.resources
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.csproj.GenerateResource.cache
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.csproj.CoreCompileInputs.cache
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.exe
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.pdb
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.Account.resources
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.btn_exit.resources
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.Manhinh.resources
+D:\C#\IOT\Cf_manager\Cf_manager\bin\Debug\vi-VN\Cf_manager.resources.dll
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.Admin.resources
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\Cf_manager.Admin.vi-VN.resources
+D:\C#\IOT\Cf_manager\Cf_manager\obj\Debug\vi-VN\Cf_manager.resources.dll
