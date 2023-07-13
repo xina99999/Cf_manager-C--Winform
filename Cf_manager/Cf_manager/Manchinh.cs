@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cf_manager.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,35 +21,26 @@ namespace Cf_manager
 
         private void BtnDN_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\SQLEXPRESS;Initial Catalog=cf_manager;Integrated Security=True");
-            try
+            string UserName = txtUser_name.Text;
+            string PassWord = txtPass.Text;
+           if(Login(UserName,PassWord))
             {
-                conn.Open();
-                string tk = txtUser_name.Text;
-                string mk = txtPass.Text;
-                string sql = "select *from Account where UserName='" + tk + "' and Password='" + mk + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
+                Manhinh manhinh = new Manhinh();
+                
+                this.Hide();
+                manhinh.ShowDialog();
+                this.Show();
 
-                SqlDataReader dta = cmd.ExecuteReader();
-                if (dta.Read() == true)
-                {
-                    MessageBox.Show("Bạn đã đăng nhập thành công");
-                    Manhinh manhinh = new Manhinh();
-                    manhinh.ShowDialog();
-                    Application.Exit();
-                }
-                else
-                {
-                    txtUser_name.Clear();
-                    txtPass.Clear();
-                    MessageBox.Show("Tài khoảng không hợp lệ");
-                }
-                conn.Close();
             }
-            catch (Exception ex)
+           else
             {
-                MessageBox.Show("loi ket noi");
+                MessageBox.Show("Tài khoản không hợp lệ ");
             }
+        }
+
+        bool Login(string UserName,string Password)
+        {
+            return AccountDAO.Instance.Login(UserName,Password);
         }
 
         private void Manchinh_Load(object sender, EventArgs e)
@@ -60,6 +52,11 @@ namespace Cf_manager
         private void btnDK_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

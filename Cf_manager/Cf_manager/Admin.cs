@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cf_manager.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,23 @@ namespace Cf_manager
         public Admin()
         {
             InitializeComponent();
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        void LoadAccountList()
+        {
+
+        }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+            String sql = "Select * FROM Account";
+            dtgvTk.DataSource = DataProvider.Instance.ExcuteQuery(sql);
         }
     }
 }
