@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Cf_manager.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Cf_manager.DAO
 {
@@ -20,6 +22,12 @@ namespace Cf_manager.DAO
 
         private DataProvider() { }
 
+        #region Methon
+
+      
+        #endregion
+
+        #region Event 
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
@@ -106,5 +114,6 @@ namespace Cf_manager.DAO
             }
             return data;
         }
+        #endregion
     }
 }

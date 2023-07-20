@@ -25,8 +25,8 @@ namespace Cf_manager.DAO
         public bool Login(string UserName, string Password) 
         {
 
-            string query = "Select * from Account where UserName = N'" + UserName + "' AND PassWord = N'"+ Password +"'";
-            DataTable login = DataProvider.Instance.ExcuteQuery(query);
+            string query = "USP_login @UserName , @PassWord";
+            DataTable login = DataProvider.Instance.ExcuteQuery(query, new object[]{ UserName, Password});
             return login.Rows.Count>0; 
         }
         

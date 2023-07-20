@@ -78,7 +78,7 @@ namespace Cf_manager
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception  ex)
             {
                 MessageBox.Show("Lỗi hệ thống");
             }
